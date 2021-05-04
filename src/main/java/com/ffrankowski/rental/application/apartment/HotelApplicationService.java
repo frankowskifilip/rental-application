@@ -1,15 +1,13 @@
 package com.ffrankowski.rental.application.apartment;
 
-import java.util.Map;
+import com.ffrankowski.rental.domain.hotel.Hotel;
+import com.ffrankowski.rental.domain.hotel.HotelFactory;
 
 public class HotelApplicationService {
+
     public void addHotel(String name, String street, String buildingNumber,
-                    String postalCode, String city, String country) {
+                         String postalCode, String city, String country) {
 
-
-    }
-
-    public void addRoom(String hotelId, int number, String description, Map<String, Double> roomsDefinition) {
-
+        Hotel hotel = new HotelFactory().create(name, street, buildingNumber, postalCode, city, country);
     }
 }
