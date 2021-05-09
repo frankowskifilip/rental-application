@@ -12,7 +12,7 @@ public class HotelApplicationService {
         this.hotelRepository = hotelRepository;
     }
 
-    public void addHotel(String name, String street, String buildingNumber,
+    public void add(String name, String street, String buildingNumber,
                          String postalCode, String city, String country) {
 
         Hotel hotel = new HotelFactory().create(name, street, buildingNumber, postalCode, city, country);
