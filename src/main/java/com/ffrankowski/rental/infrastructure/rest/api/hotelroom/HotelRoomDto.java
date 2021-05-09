@@ -1,0 +1,44 @@
+package com.ffrankowski.rental.infrastructure.rest.api.hotelroom;
+
+class HotelRoomDto {
+    private final String name;
+    private final String street;
+    private final String buildingNumber;
+    private final String postalCode;
+    private final String city;
+    private final String country;
+
+    HotelRoomDto(final String name, final String street, final String buildingNumber, final String postalCode,
+                 final String city, final String country) {
+        this.name = name;
+        this.street = street;
+        this.buildingNumber = buildingNumber;
+        this.postalCode = postalCode;
+        this.city = city;
+        this.country = country;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    String getStreet() {
+        return street;
+    }
+
+    String getBuildingNumber() {
+        return buildingNumber;
+    }
+
+    String getPostalCode() {
+        return postalCode;
+    }
+
+    String getCity() {
+        return city;
+    }
+
+    String getCountry() {
+        return country;
+    }
+}
