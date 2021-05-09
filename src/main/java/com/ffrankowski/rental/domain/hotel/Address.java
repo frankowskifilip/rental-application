@@ -1,5 +1,8 @@
 package com.ffrankowski.rental.domain.hotel;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 class Address {
     private final String street;
     private final String buildingNumber;

@@ -1,5 +1,8 @@
 package com.ffrankowski.rental.domain.hotelroom;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 class SquareMeter {
     private Double value;
 
