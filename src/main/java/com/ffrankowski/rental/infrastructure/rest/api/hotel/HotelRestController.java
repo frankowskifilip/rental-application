@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("hotel")
-class HotelRestController {
+public class HotelRestController {
 
     private final HotelApplicationService hotelApplicationService;
 
@@ -17,7 +17,7 @@ class HotelRestController {
     }
 
     @PostMapping
-    void add(@RequestBody HotelDto hotelDto){
+    public void add(@RequestBody HotelDto hotelDto){
         hotelApplicationService.add(hotelDto.getName(), hotelDto.getStreet(), hotelDto.getBuildingNumber(),
                 hotelDto.getPostalCode(), hotelDto.getCity(), hotelDto.getCountry());
     }

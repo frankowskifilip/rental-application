@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("apartment")
-class ApartmentRestController {
+public class ApartmentRestController {
 
     private final ApartmentApplicationService apartmentApplicationService;
 
@@ -17,7 +17,7 @@ class ApartmentRestController {
     }
 
     @PostMapping
-    void add(@RequestBody ApartmentDto apartmentDto) {
+    public void add(@RequestBody ApartmentDto apartmentDto) {
         apartmentApplicationService.add(apartmentDto.getOwnerId(), apartmentDto.getStreet(),
                 apartmentDto.getHouseNumber(), apartmentDto.getApartmentNumber(), apartmentDto.getPostalCode(),
                 apartmentDto.getCity(), apartmentDto.getCountry(), apartmentDto.getDescription(),

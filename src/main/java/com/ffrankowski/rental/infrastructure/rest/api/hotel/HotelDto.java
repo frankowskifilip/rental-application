@@ -1,6 +1,5 @@
 package com.ffrankowski.rental.infrastructure.rest.api.hotel;
 
-
 class HotelDto {
     private final String name;
     private final String street;
