@@ -1,4 +1,4 @@
-package com.ffrankowski.rental.application.apartment;
+package com.ffrankowski.rental.application.hotelroom;
 
 import com.ffrankowski.rental.domain.hotelroom.HotelRoom;
 import com.ffrankowski.rental.domain.hotelroom.HotelRoomFactory;
@@ -20,3 +20,4 @@ public class HotelRoomApplicationService {
         hotelRoomRepository.save(hotelRoom);
     }
 }
+

@@ -1,6 +1,6 @@
 package com.ffrankowski.rental.infrastructure.rest.api.hotel;
 
-import com.ffrankowski.rental.application.apartment.HotelApplicationService;
+import com.ffrankowski.rental.application.hotel.HotelApplicationService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

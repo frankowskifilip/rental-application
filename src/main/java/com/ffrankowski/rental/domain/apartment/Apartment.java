@@ -1,5 +1,7 @@
 package com.ffrankowski.rental.domain.apartment;
 
+import com.ffrankowski.rental.domain.eventchannel.EventChannel;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -23,5 +25,10 @@ public class Apartment {
         this.address = address;
         this.description = description;
         this.rooms = rooms;
+    }
+
+    public void book(final String tenantId, final Period period, final EventChannel eventChannel) {
+        ApartmentBooked apartmentBooked = ApartmentBooked.create(id, ownerId, tenantId, period);
+        eventChannel.publish(apartmentBooked);
     }
 }

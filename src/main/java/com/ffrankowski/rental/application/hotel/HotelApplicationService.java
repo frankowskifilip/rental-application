@@ -1,4 +1,4 @@
-package com.ffrankowski.rental.application.apartment;
+package com.ffrankowski.rental.application.hotel;
 
 import com.ffrankowski.rental.domain.hotel.Hotel;
 import com.ffrankowski.rental.domain.hotel.HotelFactory;
