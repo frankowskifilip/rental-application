@@ -1,13 +1,11 @@
 package com.ffrankowski.rental.domain.hotelroom;
 
-import com.ffrankowski.rental.domain.eventchannel.Event;
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.UUID;
 
-public class HotelRoomBooked implements Event {
+public class HotelRoomBooked {
 
     private final String eventId;
     private final LocalDateTime eventCreationDateTime;
