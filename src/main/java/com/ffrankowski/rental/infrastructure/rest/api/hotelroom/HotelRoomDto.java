@@ -1,44 +1,33 @@
 package com.ffrankowski.rental.infrastructure.rest.api.hotelroom;
 
+import java.util.Map;
+
 class HotelRoomDto {
-    private final String name;
-    private final String street;
-    private final String buildingNumber;
-    private final String postalCode;
-    private final String city;
-    private final String country;
+    private final String hotelId;
+    private final int number;
+    private final Map<String, Double> spacesDefinition;
+    private final String description;
 
-    HotelRoomDto(final String name, final String street, final String buildingNumber, final String postalCode,
-                 final String city, final String country) {
-        this.name = name;
-        this.street = street;
-        this.buildingNumber = buildingNumber;
-        this.postalCode = postalCode;
-        this.city = city;
-        this.country = country;
+    HotelRoomDto(final String hotelId, final int number, final Map<String, Double> spacesDefinition, final String description) {
+        this.hotelId = hotelId;
+        this.number = number;
+        this.spacesDefinition = spacesDefinition;
+        this.description = description;
     }
 
-    String getName() {
-        return name;
+    String getHotelId() {
+        return hotelId;
     }
 
-    String getStreet() {
-        return street;
+    int getNumber() {
+        return number;
     }
 
-    String getBuildingNumber() {
-        return buildingNumber;
+    Map<String, Double> getSpacesDefinition() {
+        return spacesDefinition;
     }
 
-    String getPostalCode() {
-        return postalCode;
-    }
-
-    String getCity() {
-        return city;
-    }
-
-    String getCountry() {
-        return country;
+    String getDescription() {
+        return description;
     }
 }
