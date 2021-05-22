@@ -14,7 +14,7 @@ public class HotelRoomBooked {
     private final String tenantId;
     private final List<LocalDate> dates;
 
-    public HotelRoomBooked(String eventId, LocalDateTime eventCreationDateTime, String id, String hotelId,
+    private HotelRoomBooked(String eventId, LocalDateTime eventCreationDateTime, String id, String hotelId,
                            String tenantId, List<LocalDate> dates) {
         this.eventId = eventId;
         this.eventCreationDateTime = eventCreationDateTime;
@@ -34,7 +34,7 @@ public class HotelRoomBooked {
         return eventId;
     }
 
-    LocalDateTime getEventCreationDateTime() {
+    public LocalDateTime getEventCreationDateTime() {
         return eventCreationDateTime;
     }
 
